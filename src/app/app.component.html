@@ -59,9 +59,18 @@
                             <thead>
                                 <tr >
                                     <th *ngFor="let url of app.urls">
-                                        <button class="btn btn-light" *ngIf='url.url'>
-                                            <a  target="_blank" rel="noopener" href="{{url.url}}">{{url.envi}}</a>
-                                        </button>
+                                        <a  class="btn btn-outline-primary" 
+                                            *ngIf="url.url && url.envi == 'dev'" 
+                                            target="_blank" rel="noopener" href="{{url.url}}">{{url.Name}}</a>
+                                        <a  class="btn btn-outline-info" 
+                                            *ngIf="url.url && url.envi == 'stage'" 
+                                            target="_blank" rel="noopener" href="{{url.url}}">{{url.Name}}</a>    
+                                        <a  class="btn btn-outline-info" 
+                                            *ngIf="url.url && url.envi == 'uat'" 
+                                            target="_blank" rel="noopener" href="{{url.url}}">{{url.Name}}</a>    
+                                        <a  class="btn btn-outline-danger" 
+                                            *ngIf="url.url && url.envi == 'prod'" 
+                                            target="_blank" rel="noopener" href="{{url.url}}">{{url.Name}}</a>    
                                     </th>
                                 </tr>
                             </thead>

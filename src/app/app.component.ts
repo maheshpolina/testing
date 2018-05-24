@@ -46,16 +46,20 @@ export class AppComponent implements OnInit{
     'name': 'Service 2.0',
     'urls':[{
       'envi':'dev',
+      'Name': 'Dev',
       'url': 'https://sf-dev.olympusamerica.com:8889/esb/mule/svc20/console/'
     },
     {
       'envi':'uat',
+      'Name':'UAT',
       'url': "http://64.64.41.52:8889/esb/mule/svc20/console/"
     },{
       'envi':'stage',
+      'Name': 'Staging',
       'url': null,
     },{
       'envi':'prod',
+      'Name': 'Production',
       'url': null
     }
     ]
@@ -64,16 +68,20 @@ export class AppComponent implements OnInit{
     'name': 'SAP Api',
     'urls':[{
       'envi':'dev',
+      'Name': 'Dev',
       'url': 'http://drst.olympusamerica.com:9999/mule/sap/rest/console/'
     },
     {
       'envi':'uat',
+      'Name': 'UAT',
       'url': "http://64.64.41.52:9999/mule/sap/rest/console/"
     },{
       'envi':'stage',
+      'Name': 'Staging',
       'url': "http://64.64.41.50:9999/mule/sap/rest/console/",
     },{
       'envi':'prod',
+      'Name': 'Production',
       'url': "https://rest.olympusamerica.com/mule/sap/rest/console/"
     }
     ]
@@ -82,16 +90,20 @@ export class AppComponent implements OnInit{
     'name': 'MSG Api',
     'urls':[{
       'envi':'dev',
+      'Name': 'Dev',
       'url': 'http://drst.olympusamerica.com:9999/mule/msg/rest/console/'
     },
     {
       'envi':'uat',
+      'Name': 'UAT',
       'url': null
     },{
       'envi':'stage',
+      'Name': 'Staging',
       'url': "http://64.64.41.50:9999/mule/msg/rest/console/",
     },{
       'envi':'prod',
+      'Name': 'Production',
       'url': "https://rest.olympusamerica.com/mule/msg/rest/console/"
     }
     ]
@@ -100,16 +112,20 @@ export class AppComponent implements OnInit{
     'name': 'AM Api',
     'urls':[{
       'envi':'dev',
+      'Name': 'Dev',
       'url': 'https://sf-dev.olympusamerica.com:8889/esb/mule/api/am/console/'
     },
     {
       'envi':'uat',
+      'Name': 'UAT',
       'url': null
     },{
       'envi':'stage',
+      'Name': 'Staging',
       'url': "http://cvyhj1a06v:8889/esb/mule/api/am/console/",
     },{
       'envi':'prod',
+      'Name': 'Production',
       'url': "http://64.64.41.16:8889/esb/mule/api/am/console/"
     }
     ]
@@ -118,16 +134,20 @@ export class AppComponent implements OnInit{
     'name': 'CPG Api',
     'urls':[{
       'envi':'dev',
+      'Name': 'Dev',
       'url': 'http://drst.olympusamerica.com:9999/mule/cpg/rest/console/'
     },
     {
       'envi':'uat',
+      'Name': 'UAT',
       'url': null
     },{
       'envi':'stage',
+      'Name': 'Staging',
       'url': "http://cvyhj1a06v:8889/mule/cpg/rest/console/",
     },{
       'envi':'prod',
+      'Name': 'Production',
       'url': "http://rest.olympusamerica.com:9999/mule/cpg/rest/console/"
     }
     ]
@@ -136,19 +156,24 @@ export class AppComponent implements OnInit{
     'name': 'WS Stack',
     'urls':[{
       'envi':'dev',
+      'Name': 'Dev',
       'url': 'http://cvyhj1a01v:9999/console/'
     },
     {
       'envi':'uat',
+      'Name': 'UAT',
       'url': null
     },{
       'envi':'stage',
+      'Name': 'Staging',
       'url': "http://cvyhj1a06v:9999/console/",
     },{
-      'envi':'prod 1',
+      'envi':'prod',
+      'Name': 'Production 01',
       'url': "http://cvyhj3a01v:9999/console/"
     },{
-      'envi':'prod 2',
+      'envi':'prod',
+      'Name': 'Production 02',
       'url': "http://cvyhj3a02v:9999/console/"
     }
     ]
@@ -157,16 +182,20 @@ export class AppComponent implements OnInit{
     'name': 'WSSP',
     'urls':[{
       'envi':'dev',
+      'Name': 'Dev',
       'url': 'http://wsdev:8080/wssp'
     },
     {
       'envi':'uat',
+      'Name': 'UAT',
       'url': null
     },{
       'envi':'stage',
+      'Name': 'Staging',
       'url': null,
     },{
       'envi':'prod',
+      'Name': 'Production',
       'url': "https://wssp.olympusamerica.com/"
     }
     ]
@@ -175,16 +204,20 @@ export class AppComponent implements OnInit{
     'name': 'Shark SAP',
     'urls':[{
       'envi':'dev',
+      'Name': 'Dev',
       'url': 'http://drst.olympusamerica.com:9999/mule/sharksap/rest/console/'
     },
     {
       'envi':'uat',
+      'Name': 'UAT',
       'url': null
     },{
       'envi':'stage',
+      'Name': 'Staging',
       'url': "http://cvyhj1a06v:9999/mule/sharksap/rest/console/",
     },{
       'envi':'prod',
+      'Name': 'Production',
       'url': "http://rest.olympusamerica.com:9999/mule/sharksap/rest/console/"
     }
     ]
@@ -192,24 +225,70 @@ export class AppComponent implements OnInit{
   {
     'name': 'MQ',
     'urls':[{
-      'envi':'non prod 1',
+      'envi':'dev',
+      'Name': 'Non Prod 01',
       'url': 'http://cvyhj1a01v:8161/admin/queues.jsp'
     },
     {
-      'envi':'non prod 2',
+      'envi':'dev',
+      'Name': 'Non Prod 02',
       'url': "http://cvyhj1a02v:8161/admin/queues.jsp"
     },{
-      'envi':'non prod 6',
+      'envi':'dev',
+      'Name': 'Non Prod 06',
       'url': "http://cvyhj1a06v:8161/admin/queues.jsp",
     },{
-      'envi':'prod 1',
+      'envi':'prod',
+      'Name': 'Production 01',
       'url': "http://cvyhj3a01v:8161/admin/queues.jsp"
     },{
-      'envi':'prod 2',
+      'envi':'prod',
+      'Name': 'Production 02',
       'url': "http://cvyhj3a02v:8161/admin/queues.jsp"
     },{
-      'envi':'prod 5',
+      'envi':'prod',
+      'Name': 'Production 05',
       'url': "http://cvyhj3a05v:8161/admin/queues.jsp"
+    }
+    ]
+  },
+  {
+    'name': 'Splunk',
+    'urls':[{
+      'envi':'dev',
+      'Name': 'Dev',
+      'url': 'http://cvyhj1a08v:8000'
+    },
+    {
+      'envi':'uat',
+      'Name': 'UAT',
+      'url': null
+    },{
+      'envi':'stage',
+      'Name': 'Staging',
+      'url': null,
+    },{
+      'envi':'prod',
+      'Name': 'Production',
+      'url': "http://cvyhj3311v:8000"
+    }
+    ]
+  },
+  {
+    'name': 'Miscellaneous',
+    'urls':[{
+      'envi':'prod',
+      'Name': 'Jenkins',
+      'url': 'http://cvyhj3a04v:8081'
+    },
+    {
+      'envi':'prod',
+      'Name': 'TPM',
+      'url': "https://tpm.oai.olympusglobal.com/index.php"
+    },{
+      'envi':'prod',
+      'Name': 'Wiki',
+      'url': "https://wiki-ea.oai.olympusglobal.com/index.php",
     }
     ]
   }]
