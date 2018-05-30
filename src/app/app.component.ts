@@ -47,12 +47,12 @@ export class AppComponent implements OnInit{
     'urls':[{
       'envi':'dev',
       'Name': 'Dev',
-      'url': 'https://sf-dev.olympusamerica.com:8889/esb/mule/svc20/console/'
+      'url': 'https://cvyhj1a01v:8889/esb/mule/svc20/console/'
     },
     {
       'envi':'uat',
       'Name':'UAT',
-      'url': "http://64.64.41.52:8889/esb/mule/svc20/console/"
+      'url': "http://cvyhj1a02v:8889/esb/mule/svc20/console/"
     },{
       'envi':'stage',
       'Name': 'Staging',
@@ -69,20 +69,24 @@ export class AppComponent implements OnInit{
     'urls':[{
       'envi':'dev',
       'Name': 'Dev',
-      'url': 'http://drst.olympusamerica.com:9999/mule/sap/rest/console/'
+      'url': 'http://cvyhj1a01v:9999/mule/sap/rest/console/'
     },
     {
       'envi':'uat',
       'Name': 'UAT',
-      'url': "http://64.64.41.52:9999/mule/sap/rest/console/"
+      'url': "http://cvyhj1a02v:9999/mule/sap/rest/console/"
     },{
       'envi':'stage',
       'Name': 'Staging',
-      'url': "http://64.64.41.50:9999/mule/sap/rest/console/",
+      'url': "http://cvyhj1a06v:9999/mule/sap/rest/console/",
     },{
       'envi':'prod',
-      'Name': 'Production',
-      'url': "https://rest.olympusamerica.com/mule/sap/rest/console/"
+      'Name': 'Production 1',
+      'url': "http://cvyhj3a01v:9999/mule/sap/rest/console/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      'url': "http://cvyhj3a02v:9999/mule/sap/rest/console/"
     }
     ]
   },
@@ -91,7 +95,7 @@ export class AppComponent implements OnInit{
     'urls':[{
       'envi':'dev',
       'Name': 'Dev',
-      'url': 'http://drst.olympusamerica.com:9999/mule/msg/rest/console/'
+      'url': 'http://cvyhj1a01v:9999/mule/msg/rest/console/'
     },
     {
       'envi':'uat',
@@ -100,20 +104,24 @@ export class AppComponent implements OnInit{
     },{
       'envi':'stage',
       'Name': 'Staging',
-      'url': "http://64.64.41.50:9999/mule/msg/rest/console/",
+      'url': "http://cvyhj1a06v:9999/mule/msg/rest/console/",
     },{
       'envi':'prod',
-      'Name': 'Production',
-      'url': "https://rest.olympusamerica.com/mule/msg/rest/console/"
+      'Name': 'Production 1',
+      'url': "http://cvyhj3a01v:9999/mule/msg/rest/console/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      'url': "http://cvyhj3a02v:9999/mule/msg/rest/console/"
     }
     ]
   },
   {
-    'name': 'AM Api',
+    'name': 'AM SAP Api',
     'urls':[{
       'envi':'dev',
       'Name': 'Dev',
-      'url': 'https://sf-dev.olympusamerica.com:8889/esb/mule/api/am/console/'
+      'url': 'http://cvyhj1a01v:8889/esb/mule/api/am/console/'
     },
     {
       'envi':'uat',
@@ -125,8 +133,38 @@ export class AppComponent implements OnInit{
       'url': "http://cvyhj1a06v:8889/esb/mule/api/am/console/",
     },{
       'envi':'prod',
-      'Name': 'Production',
-      'url': "http://64.64.41.16:8889/esb/mule/api/am/console/"
+      'Name': 'Production 1',
+      'url': "http://cvyhj3a01v:8889/esb/mule/api/am/console/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      'url': "http://cvyhj3a02v:8889/esb/mule/api/am/console/"
+    }
+    ]
+  },
+  {
+    'name': 'AM SFDC Api',
+    'urls':[{
+      'envi':'dev',
+      'Name': 'Dev',
+      'url': 'http://cvyhj1a01v:8889/esb/mule/api/am/sfdc/console/'
+    },
+    {
+      'envi':'uat',
+      'Name': 'UAT',
+      'url': null
+    },{
+      'envi':'stage',
+      'Name': 'Staging',
+      'url': "http://cvyhj1a06v:8889/esb/mule/api/am/sfdc/console/",
+    },{
+      'envi':'prod',
+      'Name': 'Production 1',
+      'url': "http://cvyhj3a01v:8889/esb/mule/api/am/sfdc/console/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      'url': "http://cvyhj3a02v:8889/esb/mule/api/am/sfdc/console/"
     }
     ]
   },
@@ -135,7 +173,7 @@ export class AppComponent implements OnInit{
     'urls':[{
       'envi':'dev',
       'Name': 'Dev',
-      'url': 'http://drst.olympusamerica.com:9999/mule/cpg/rest/console/'
+      'url': 'http://cvyhj1a01v:9999/mule/cpg/rest/console/'
     },
     {
       'envi':'uat',
@@ -147,8 +185,12 @@ export class AppComponent implements OnInit{
       'url': "http://cvyhj1a06v:8889/mule/cpg/rest/console/",
     },{
       'envi':'prod',
-      'Name': 'Production',
-      'url': "http://rest.olympusamerica.com:9999/mule/cpg/rest/console/"
+      'Name': 'Production 1',
+      'url': "http://cvyhj3a01v:9999/mule/cpg/rest/console/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      'url': "http://cvyhj3a02v:9999/mule/cpg/rest/console/"
     }
     ]
   },
@@ -169,11 +211,11 @@ export class AppComponent implements OnInit{
       'url': "http://cvyhj1a06v:9999/console/",
     },{
       'envi':'prod',
-      'Name': 'Production 01',
+      'Name': 'Production 1',
       'url': "http://cvyhj3a01v:9999/console/"
     },{
       'envi':'prod',
-      'Name': 'Production 02',
+      'Name': 'Production 2',
       'url': "http://cvyhj3a02v:9999/console/"
     }
     ]
@@ -201,11 +243,11 @@ export class AppComponent implements OnInit{
     ]
   },
   {
-    'name': 'Shark SAP',
+    'name': 'Shark SAP Api',
     'urls':[{
       'envi':'dev',
       'Name': 'Dev',
-      'url': 'http://drst.olympusamerica.com:9999/mule/sharksap/rest/console/'
+      'url': 'http://cvyhj1a01v:9999/mule/sharksap/rest/console/'
     },
     {
       'envi':'uat',
@@ -217,8 +259,90 @@ export class AppComponent implements OnInit{
       'url': "http://cvyhj1a06v:9999/mule/sharksap/rest/console/",
     },{
       'envi':'prod',
-      'Name': 'Production',
-      'url': "http://rest.olympusamerica.com:9999/mule/sharksap/rest/console/"
+      'Name': 'Production 1',
+      'url': "http://cvyhj3a01v:9999/mule/sharksap/rest/console/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      'url': "http://cvyhj3a02v:9999/mule/sharksap/rest/console/"
+    }
+    ]
+  },
+  {
+    'name': 'WMIS Api',
+    'urls':[{
+      'envi':'dev',
+      'Name': 'Dev',
+      'url': 'http://cvyhj1a01v:9998/esb/mule/api/wmis/wmiconsole/'
+    },
+    {
+      'envi':'uat',
+      'Name': 'UAT',
+      'url': "http://cvyhj1a02v:9998/esb/mule/api/wmis/wmiconsole/"
+    },{
+      'envi':'stage',
+      'Name': 'Staging',
+      'url': "http://cvyhj1a06v:9998/esb/mule/api/wmis/wmiconsole/",
+    },{
+      'envi':'prod',
+      'Name': 'Production 1',
+      'url': "http://cvyhj3a01v:9998/esb/mule/api/wmis/wmiconsole/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      'url': "http://cvyhj3a02v:9998/esb/mule/api/wmis/wmiconsole/"
+    }
+    ]
+  },
+  {
+    'name': 'WMIS SAP Api',
+    'urls':[{
+      'envi':'dev',
+      'Name': 'Dev',
+      'url': 'http://cvyhj1a01v:9998/esb/mule/api/wmis/sapconsole/'
+    },
+    {
+      'envi':'uat',
+      'Name': 'UAT',
+      'url': "http://cvyhj1a02v:9998/esb/mule/api/wmis/sapconsole/"
+    },{
+      'envi':'stage',
+      'Name': 'Staging',
+      'url': "http://cvyhj1a06v:9998/esb/mule/api/wmis/sapconsole/",
+    },{
+      'envi':'prod',
+      'Name': 'Production 1',
+      'url': "http://cvyhj3a01v:9998/esb/mule/api/wmis/sapconsole/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      'url': "http://cvyhj3a02v:9998/esb/mule/api/wmis/sapconsole/"
+    }
+    ]
+  },
+  {
+    'name': 'WMIS Visual Api',
+    'urls':[{
+      'envi':'dev',
+      'Name': 'Dev',
+      'url': 'http://cvyhj1a01v:9998/esb/mule/api/wmis/visualconsole/'
+    },
+    {
+      'envi':'uat',
+      'Name': 'UAT',
+      'url': "http://cvyhj1a02v:9998/esb/mule/api/wmis/visualconsole/"
+    },{
+      'envi':'stage',
+      'Name': 'Staging',
+      'url': "http://cvyhj1a06v:9998/esb/mule/api/wmis/visualconsole/",
+    },{
+      'envi':'prod',
+      'Name': 'Production 1',
+      //'url': "http://cvyhj3a01v:9998/esb/mule/api/wmis/visualconsole/"
+    },{
+      'envi':'prod',
+      'Name': 'Production 2',
+      //'url': "http://cvyhj3a02v:9998/esb/mule/api/wmis/visualconsole/"
     }
     ]
   },
@@ -226,28 +350,28 @@ export class AppComponent implements OnInit{
     'name': 'MQ',
     'urls':[{
       'envi':'dev',
-      'Name': 'Non Prod 01',
+      'Name': 'Non Prod 1',
       'url': 'http://cvyhj1a01v:8161/admin/queues.jsp'
     },
     {
       'envi':'dev',
-      'Name': 'Non Prod 02',
+      'Name': 'Non Prod 2',
       'url': "http://cvyhj1a02v:8161/admin/queues.jsp"
     },{
       'envi':'dev',
-      'Name': 'Non Prod 06',
+      'Name': 'Non Prod 6',
       'url': "http://cvyhj1a06v:8161/admin/queues.jsp",
     },{
       'envi':'prod',
-      'Name': 'Production 01',
+      'Name': 'Production 1',
       'url': "http://cvyhj3a01v:8161/admin/queues.jsp"
     },{
       'envi':'prod',
-      'Name': 'Production 02',
+      'Name': 'Production 2',
       'url': "http://cvyhj3a02v:8161/admin/queues.jsp"
     },{
       'envi':'prod',
-      'Name': 'Production 05',
+      'Name': 'Production 5',
       'url': "http://cvyhj3a05v:8161/admin/queues.jsp"
     }
     ]
